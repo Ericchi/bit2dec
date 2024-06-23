@@ -8,7 +8,7 @@ fn sum_bit(suuji: &[bool]) -> i64 {
     let mut result = 0;
     for (i, &bit) in suuji.iter().enumerate() {
         if suuji[i] {
-            result += 2_i32.pow(i as u32);
+            result += 2_i64.pow(i as u32);
         }
     }
     result as i64
@@ -21,7 +21,7 @@ fn main() {
         std::process::exit(1);
     }
     let query = &args[1];
-    if query.len() > 64 {
+    if query.len() > 63 {
         println!("Number exceeds 64 bit. Aborting.");
         std::process::exit(1);
     }
