@@ -1,2 +1,2 @@
 # bit2dec
-A bit to decimal number converter written in C# and then re-written and adapted to Rust
+Migrated here: https://git.ericchi.moe/ericchi/bit2dec-rust
